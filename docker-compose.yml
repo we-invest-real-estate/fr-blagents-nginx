@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  nginx:
+    build: .
+    container_name: nginx-redirect
+    ports:
+      - "80:80"
+    restart: unless-stopped
